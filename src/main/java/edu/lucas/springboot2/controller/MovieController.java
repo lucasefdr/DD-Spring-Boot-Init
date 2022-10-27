@@ -29,6 +29,6 @@ public class MovieController {
     @GetMapping(path = "list")
     public List<Movie> list() {
         log.info(dateUtil.formatLocalDateTimeToDatabaseStyle(LocalDateTime.now()));
-        return List.of(new Movie("O Senhor dos Anéis"), new Movie("Batman"));
+        return List.of(new Movie("O Senhor dos Anéis"), new Movie("Batman"), new Movie("Harry Potter"));
     }
 }
